@@ -1,4 +1,6 @@
-var http        = require('http');
+var http = 'http';
+
+require([http], result => http = result;);
 var express		= require('express');
 var fs			= require('fs');
 var io			= require('socket.io');
